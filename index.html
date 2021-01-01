@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Ordering</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    
+    <div class="jumbotron">
+    </div>
+    
+    <div class="simbol">   
+        
+        <h3 id="jajan">JajanSkuy!</h3>
+    </div>
+    <div id="notloggedin" class="hidden">
+
+      <p>    <b>Pengen jajan? Kuy order!</b> <br> <br>
+
+     Ehh tapi kak, sebelum order login dulu ya.Gampang<br>
+       kok,klik aja tombol di bawah ini.</p>
+        <button type="button" class="btn btn-success" id="login">Login</button>
+
+    </div>
+
+    <div id="loggedin" class ="hidden">
+
+        <div class="teks1">
+            <img id="photo" src="">
+            <p>Hi <span id="profileName"></span></p><p>Yuk jajan,kakak bisa pilih menu di bawah</p>
+        </div>
+        
+        
+        
+        <div class="judul">
+            <h1>Makanan</h1>
+        </div>
+        
+        <div class="isi">
+            <div class="pisah">
+                
+                <li><h3>Makanan 1</h3>
+                    <p>Rp.10.000</p></li>
+               
+                        <div class="tombol">
+
+                            <button onclick="substract(1,'makanan');"type="button"  class="minusbutton minusbutton1" >-</button>
+                            <li> <span id="makanan1"></span></li>
+                            <button onclick="add(1,'makanan')"type="button" class="plusbutton">+</button>
+                        </div>
+                 
+                        
+  
+                        
+                    </div>
+                    <div class="pisah">
+                        
+                        <li><h3>Makanan 2</h3>
+                            <p>Rp.10.000</p></li>
+                            <div class="tombol">
+
+                                <button onclick="substract(2,'makanan');"type="button" class="minusbutton minusbutton2" >-</button>
+                                <li> <span id="makanan2"></span></li>
+                                <button onclick="add(2,'makanan')"type="button" class="plusbutton">+</button>
+                            </div>
+        </div>
+        </div>
+   
+    <div class="judul">
+
+        <h1>Minuman</h1>
+    </div> 
+    <div class="isi">
+        <div class="pisah">
+            
+            <li><h3>Minuman 1</h3>
+                <p>Rp.10.000</p></li>
+                <div class="tombol">
+                    
+                    <button onclick="substract(1,'minuman');"type="button" class="minusbutton minusbutton3" >-</button>
+                    <li> <span id="minuman1"></span></li>
+                    <button onclick="add(1,'minuman')"type="button" class="plusbutton">+</button>
+                </div>
+                <div class="pisah">
+                    
+                </div>
+                    <li><h3>Minuman 2</h3>
+                        <p>Rp.10.000</p></li>
+
+                        <div class="tombol">
+                            <button onclick="substract(2,'minuman');"type="button" class="minusbutton minusbutton4" >-</button>
+                            <li> <p span id="minuman2"></span></li>
+                                <button onclick="add(2,'minuman')"type="button" class="plusbutton">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr id="garis">   
+                    <div class="ringkasan">
+                        <h3>Ringkasan</h3>
+                        <div class="tombolPesan">
+                            
+                            <button type="button" class="btn btn-success" id="bayar">Pesan Sekarang</button>
+                        </div>
+                    </div>
+                        <div class="hasil">
+
+                            <p id="pembelian">Pembelian <span id="totma">0</span> makanan dan <span id="totmi">0</span> minuman </p>
+                            <p>Total  <span id="total">0</span> IDR </p>
+                        </div>
+                            <p></p>
+                    
+                            
+                        </div>
+                            <div class="footer">
+                    <h5>
+                     <button id="link" class="hidden"><i>Buka di external browser</i> </button>
+                    </h5>
+                    <button id="logout" class="hidden"><i>Log out</i> </button>
+                </div>
+                    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+                    <script src="liff-starter.js"></script>
+                    <script src="javascript.js"></script>
+                </body>
+                </html>
+                
